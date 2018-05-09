@@ -1,0 +1,99 @@
+<!Doctype html>
+<html>
+<head>
+    <title>Dating Website Assignment</title>
+    <meta name="author" content="Kamil Molwani">
+</head>
+<style>
+fieldset {background-color: lightyellow}
+fieldset {border: 10px solid yellow}
+fieldset {margin-bottom: 10px}
+fieldset {width: 720px}
+label {width: 180px}
+label {display: inline-block; text-align: right; vertical-align: top}
+.left {text-align: center; background-color: red; width: 40px; color: white}
+.right {text-align: center; background-color: blue; width: 40px; color: white}
+.male {width: auto;}
+.female {width: auto;}
+textarea {width: 360px; height: 50px}
+label:hover { font-size: 20px}
+input:hover { font-size: 20px}
+img {width: 100px; height: 140px;}
+</style>
+<script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+<body>
+  <h1> Please Enter Your Detail For Our Dating Website!</h1>
+<form>
+  <fieldset>
+    <legend> Picture </legend>
+    <label for="picture"> Your Image:* </label>
+    <input type="file" id="picture" name="picture" required> <br>
+    <label for="preview"> Image Preview: </label>
+    <img id="preview">
+  </fieldset>
+
+  <fieldset>
+    <legend> General Information </legend>
+    <label for="name"> Name:* </label>
+    <input type="text" id="name" name="name" placeholder="Enter Full Name" required> <br>
+
+    <label for="gender"> Gender:* </label>
+    <input type="radio" id="male" name="gender" value="Male" required>
+      <label for="gender" class="male"> Male </label>
+    <input type="radio" id="female" name="gender" value="Female" required>
+      <label for="gender" class="female"> Female </label> <br>
+
+    <label for="age"> Age*: </label>
+    <input type="number" id="age" name="age" value="18" required> <br>
+
+    <label for="date of birth"> Date of Birth: </label>
+    <input type="date" id="date of birth" name="date of birth"> <br>
+
+    <label for="color"> Favorite Color: </label>
+    <input type="color" id="color" name="color"> <br>
+
+    <label for="country"> Country: </label>
+    <select id="country" name="country">
+      <option value="None"> </option>
+      <option value="USA"> USA </option>
+      <option value="Canada"> Canada </option>
+      <option value="France"> France </option>
+      <option value="Italy"> Italy </option>
+      <option value="England">England</option>
+    </select>
+  </fieldset>
+
+  <fieldset>
+    <legend> Personal Description </legend>
+    <label for="height"> Height: </label>
+
+    <label for="height" class="left">Short</label>
+      <input type="range" min="0" max="100" step="5" value="50" id="height" name="height">
+    <label for="height" class="right">Tall</label> <br>
+
+    <label for="salary"> Salary: </label>
+    <label for="salary" class="left">Poor</label>
+      <input type="range" min="0" max="100" step="5" value="50" id="salary" name="salary">
+    <label for="salary" class="right">Rich</label> <br>
+  </fieldset>
+
+  <fieldset>
+    <legend> Contact Info </legend>
+    <label for="email"> Email:* </label>
+    <input type="email" id="email" name="email" required> <br>
+
+    <label for="phone"> Phone Number: </label>
+    <input type="tel" id="phone" name="phone"> <br>
+
+    <label for="address"> Address: </label>
+    <textarea id="address" name="address" placeholder="Please Enter full Address here"></textarea> <br>
+
+    <label for="contact"> Method of Contact: </label>
+    <input type="checkbox" id="email" value="Email" name="email"> Email
+    <input type="checkbox" id="phone" value="Phone" name="phone"> Phone
+    <input type="checkbox" id="whatsapp" value="Whatsapp" name="whatsapp"> Whatsapp <br>
+  </fieldset>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
